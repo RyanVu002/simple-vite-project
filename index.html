@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <!-- for production environment as dev extreme document https://js.devexpress.com/Documentation/ApiReference/Common/Utils/ui/themes/#current -->
+    <!-- it declair and system recoginize 2 themes, if disable 2 below lines, error will come as "index-01e09aad.js:2  Uncaught Error: E0021 - Unknown theme is set: null." -->
+    <link rel="dx-theme" data-theme="dx.generic.general-light-blue-scheme" href="/css/dx.generic.general-light-blue-scheme.css" data-active="true">
+    <link rel="dx-theme" data-theme="dx.generic.general-dark-blue-scheme" href="/css/dx.generic.general-dark-blue-scheme.css" data-active="false">
+
+
+    <!-- for developement environment  -->
+    <link rel="dx-theme" data-theme="dx.generic.general-light-blue-scheme" href="/src/assets/dx.generic.general-light-blue-scheme.css" data-active="true">
+    <link rel="dx-theme" data-theme="dx.generic.general-dark-blue-scheme" href="/src/assets/dx.generic.general-dark-blue-scheme.css" data-active="false">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Vue + TS</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
